@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{7247B2F5-290B-4E1E-B50B-7036DCAD5539}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>R:/Work/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>R:/Work/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ChilliConnect\CoreSource\Assertion\ReleaseAssert.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Collections\ReadOnlyDictionary.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\DataStore\DataStore.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Date\DateFormatter.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\GameObject\GameObjectFactory.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Hash\HashCode.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpGetRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpGetRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpPostRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpPostRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpRequestMethod.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpResponseDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpResult.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Http\HttpSystem.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Json\JsonSerialisation.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Json\MiniJSON.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Logging\Logging.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\MultiType\MultiTypeDictionary.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\MultiType\MultiTypeDictionaryBuilder.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\MultiType\MultiTypeList.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\MultiType\MultiTypeListBuilder.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\MultiType\MultiTypeValue.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Mutability\Mutability.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Server\BasicServerRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Server\IImmediateServerRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Server\ServerRequestSystem.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Server\ServerResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\CoreSource\Threading\TaskScheduler.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\ChilliConnectSdk.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\CloudCode.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\CloudData.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Dlc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Economy.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddCollectionObjectError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddCurrencyBalanceError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddEventError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddEventsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddIapEventError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddInventoryItemError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\AddScoreError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\ConvertCurrencyError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\CreatePlayerError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\DeleteCollectionObjectError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\DeleteMessageError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\DeletePlayerDataError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\EndSessionError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GenerateUuidError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetCollectionObjectsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetConversionDefinitionsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetCurrencyBalanceError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetCurrencyDefinitionsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetDlcUsingTagError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetFacebookFriendsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetInventoryDefinitionsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetInventoryError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetInventoryForItemIdsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetInventoryForKeysError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetMessageError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetMessagesError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetMetadataDefinitionsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetPlayerDataError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetPlayerDataForChilliConnectIdsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetPlayerDataForFacebookFriendsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetPlayerDetailsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetPlayerScoreError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetRealMoneyPurchaseDefinitionsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetScoresAroundPlayerError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetScoresError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetScoresForChilliConnectIdsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetScoresForFacebookFriendsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\GetVirtualPurchaseDefinitionsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LinkFacebookAccountError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LogInUsingChilliConnectError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LogInUsingEmailError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LogInUsingFacebookError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LogInUsingUserNameError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LookupFacebookPlayersError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\LookupUserNamesError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\MakeVirtualPurchaseError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\MarkMessageAsReadError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\QueryCollectionError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RedeemAmazonIapError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RedeemAppleIapError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RedeemGoogleIapError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RedeemMessageRewardsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RegisterTokenError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RemoveCurrencyBalanceError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RemoveInventoryItemError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\RunScriptError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\SendMessageError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\SendMessageFromPlayerError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\SetCurrencyBalanceError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\SetPlayerDataError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\SetPlayerDetailsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\SetPushGroupsError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\StartSessionError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\UnlinkFacebookAccountError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\UnregisterTokenError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\UpdateCollectionObjectError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\UpdateInventoryItemError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\ValidateAmazonIapError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\ValidateAppleIapError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\ValidateGoogleIapError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Errors\VerifyFacebookTokenError.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\InAppPurchase.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Leaderboards.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Messaging.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Metrics.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\AppStore.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\ChilliConnectPlayerData.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\ChilliConnectPlayerDataDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\CollectionDataObject.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\CollectionDataObjectDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\ConversionDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\ConversionDefinitionDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\ConversionRuleDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\CurrencyBalance.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\CurrencyBalanceDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\CurrencyDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\CurrencyDefinitionDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\DlcPackage.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\DlcPackageFile.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookPlayer.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookPlayerData.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookPlayerDataDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookPlayerDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookPlayerWithProfileImage.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookPlayerWithProfileImageDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookScore.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\FacebookScoreDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\GlobalScore.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\GlobalScoreDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\InventoryDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\InventoryDefinitionDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\LocalScore.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\LocalScoreDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\Message.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageGifts.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageReward.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardCurrency.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardInventory.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardInventoryDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardRedeemed.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardRedeemedCurrency.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardRedeemedInventory.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageRewardRedeemedInventoryDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageSendCurrency.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageSendInventory.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageSender.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageSenderDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MessageTransfer.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MetadataDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MetadataDefinitionDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MetricsEvent.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\MetricsEventDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\Player.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PlayerData.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PlayerDataDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PlayerDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PlayerInventoryItem.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PlayerInventoryItemDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PurchaseCurrencyExchange.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PurchaseCurrencyExchangeDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PurchaseExchange.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PurchaseExchangeDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PurchaseInventoryExchange.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\PurchaseInventoryExchangeDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\RealMoneyPurchaseDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\RealMoneyPurchaseDefinitionDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\ReceiptVerificationService.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\SortField.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\VirtualPurchaseDefinition.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Objects\VirtualPurchaseDefinitionDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\PlayerAccounts.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\PushNotifications.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddCollectionObjectRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddCurrencyBalanceRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddCurrencyBalanceRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddEventRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddEventRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddEventsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddIapEventRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddIapEventRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddInventoryItemRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddInventoryItemRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddScoreRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\AddScoreRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\ConvertCurrencyRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\ConvertCurrencyRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\CreatePlayerRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\CreatePlayerRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\DeleteCollectionObjectRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\DeleteCollectionObjectRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\DeleteMessageRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\DeletePlayerDataRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\DeletePlayerDataRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\EndSessionRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GenerateUuidRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetCollectionObjectsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetConversionDefinitionsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetConversionDefinitionsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetCurrencyBalanceRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetCurrencyBalanceRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetCurrencyDefinitionsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetCurrencyDefinitionsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetDlcUsingTagRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetFacebookFriendsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetInventoryDefinitionsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetInventoryDefinitionsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetInventoryForItemIdsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetInventoryForKeysRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetInventoryRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetMessageRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetMessageRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetMessagesRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetMessagesRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetMetadataDefinitionsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetMetadataDefinitionsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerDataForChilliConnectIdsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerDataForChilliConnectIdsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerDataForFacebookFriendsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerDataForFacebookFriendsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerDataRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerDetailsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetPlayerScoreRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetRealMoneyPurchaseDefinitionsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetRealMoneyPurchaseDefinitionsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresAroundPlayerRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresForChilliConnectIdsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresForChilliConnectIdsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresForFacebookFriendsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresForFacebookFriendsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetScoresRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetVirtualPurchaseDefinitionsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\GetVirtualPurchaseDefinitionsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LinkFacebookAccountRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LinkFacebookAccountRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LogInUsingChilliConnectRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LogInUsingEmailRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LogInUsingFacebookRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LogInUsingUserNameRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LookupFacebookPlayersRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\LookupUserNamesRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\MakeVirtualPurchaseRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\MakeVirtualPurchaseRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\MarkMessageAsReadRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\QueryCollectionRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\QueryCollectionRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RedeemAmazonIapRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RedeemAppleIapRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RedeemGoogleIapRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RedeemMessageRewardsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RedeemMessageRewardsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RegisterTokenRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RegisterTokenRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RemoveCurrencyBalanceRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RemoveCurrencyBalanceRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RemoveInventoryItemRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RemoveInventoryItemRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RunScriptRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\RunScriptRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SendMessageFromPlayerRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SendMessageFromPlayerRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SendMessageRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SendMessageRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetCurrencyBalanceRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetCurrencyBalanceRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetPlayerDataRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetPlayerDataRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetPlayerDetailsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetPlayerDetailsRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\SetPushGroupsRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\StartSessionRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\UnlinkFacebookAccountRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\UnregisterTokenRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\UpdateCollectionObjectRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\UpdateCollectionObjectRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\UpdateInventoryItemRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\UpdateInventoryItemRequestDesc.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\ValidateAmazonIapRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\ValidateAppleIapRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\ValidateGoogleIapRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Requests\VerifyFacebookTokenRequest.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\AddCollectionObjectResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\AddCurrencyBalanceResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\AddInventoryItemResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\AddScoreResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\ConvertCurrencyResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\CreatePlayerResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GenerateUuidResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetCollectionObjectsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetConversionDefinitionsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetCurrencyBalanceResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetCurrencyDefinitionsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetDlcUsingTagResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetFacebookFriendsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetInventoryDefinitionsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetInventoryForItemIdsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetInventoryForKeysResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetInventoryResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetMessageResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetMessagesResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetMetadataDefinitionsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetPlayerDataForChilliConnectIdsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetPlayerDataForFacebookFriendsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetPlayerDataResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetPlayerDetailsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetPlayerScoreResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetRealMoneyPurchaseDefinitionsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetScoresAroundPlayerResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetScoresForChilliConnectIdsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetScoresForFacebookFriendsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetScoresResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\GetVirtualPurchaseDefinitionsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\LinkFacebookAccountResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\LogInUsingEmailResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\LogInUsingFacebookResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\LogInUsingUserNameResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\LookupFacebookPlayersResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\LookupUserNamesResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\MakeVirtualPurchaseResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\QueryCollectionResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\RedeemAmazonIapResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\RedeemAppleIapResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\RedeemGoogleIapResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\RedeemMessageRewardsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\RemoveCurrencyBalanceResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\RunScriptResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\SendMessageFromPlayerResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\SendMessageResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\SetCurrencyBalanceResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\SetPlayerDataResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\SetPlayerDetailsResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\UnlinkFacebookAccountResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\UpdateCollectionObjectResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\UpdateInventoryItemResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\ValidateAmazonIapResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\ValidateAppleIapResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\ValidateGoogleIapResponse.cs" />
+     <Compile Include="Assets\ChilliConnect\GeneratedSource\Responses\VerifyFacebookTokenResponse.cs" />
+     <Compile Include="Assets\Scripts\ChilliConnectSetup.cs" />
+     <Compile Include="Assets\Scripts\ClickToMove.cs" />
+     <Compile Include="Assets\Scripts\DialogueHolder.cs" />
+     <Compile Include="Assets\Scripts\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\QuestManager.cs" />
+     <Compile Include="Assets\Scripts\SteeringBehaviour.cs" />
+     <Compile Include="Assets\Scripts\TouchTest.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>R:/Work/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>R:/Work/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
