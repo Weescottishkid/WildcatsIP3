@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{99F05B28-C8FD-B281-F53D-A3F7265AAA7D}") = "Distoria_v0.2.1", "Assembly-CSharp-firstpass.csproj", "{60E8292C-FA7F-AC3D-A71A-49F350C5F01C}"
+EndProject
+Project("{99F05B28-C8FD-B281-F53D-A3F7265AAA7D}") = "Distoria_v0.2.1", "Assembly-CSharp.csproj", "{115C8284-E743-A27C-217D-A66E354400CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E8292C-FA7F-AC3D-A71A-49F350C5F01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E8292C-FA7F-AC3D-A71A-49F350C5F01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E8292C-FA7F-AC3D-A71A-49F350C5F01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E8292C-FA7F-AC3D-A71A-49F350C5F01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{115C8284-E743-A27C-217D-A66E354400CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{115C8284-E743-A27C-217D-A66E354400CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{115C8284-E743-A27C-217D-A66E354400CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{115C8284-E743-A27C-217D-A66E354400CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
