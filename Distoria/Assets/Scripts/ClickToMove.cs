@@ -26,10 +26,16 @@ public class ClickToMove : MonoBehaviour
     public Vector3 minWalkPoint;
     public Vector3 maxWalkPoint;
 
+	bool move ;
+
+	Animator anim;
+
     // Use this for initialization
     void Start()
     {
+		move = false;
         //playerObjectPosition = FindObjectOfType<PlayerObject>();
+		anim = GetComponent<Animator>();
 
         walkZones = GameObject.FindGameObjectsWithTag("Boundary");
 
@@ -56,6 +62,7 @@ public class ClickToMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		anim.SetBool ("IsWalking", move);
         //cameraFollowScript.gameObject.transform.position = transform.position;
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit))
@@ -114,6 +121,7 @@ public class ClickToMove : MonoBehaviour
             if (inWalkZone == true && (targetPosition.x <= maxWalkPoint.x && targetPosition.z <= maxWalkPoint.z && targetPosition.x >= minWalkPoint.x && targetPosition.z >= minWalkPoint.z))
             {
                 moving = true;
+				move = true;
                 Debug.Log("move trigger");
             }
         }
@@ -124,12 +132,13 @@ public class ClickToMove : MonoBehaviour
     void MovePlayer()
     {
         transform.LookAt(targetPosition);
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        if (transform.position == targetPosition)
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+		if (transform.position == targetPosition)
         {
             moving = false;
             originalPosition = targetPosition;
+			move = false;
         }
 
         Debug.DrawLine(transform.position, targetPosition, Color.red);
@@ -142,6 +151,7 @@ public class ClickToMove : MonoBehaviour
         if (other.tag == "NPC")
         {
             moving = false;
+			move = false;
 
         }
     }

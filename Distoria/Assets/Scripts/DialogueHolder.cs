@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class DialogueHolder : MonoBehaviour {
@@ -7,12 +8,19 @@ public class DialogueHolder : MonoBehaviour {
     private DialogueManager dManager;
     public bool pressedInRange = false;
     public string[] dialogueLines;
+	public Image image;
 
     public Collider talkRadius;
 
 	// Use this for initialization
 	void Start ()
     {
+		GameObject go = GameObject.Find ("Canvas");
+		if (!go)
+			return;
+
+		image = go.GetComponent<Image> ();
+
         dManager = FindObjectOfType<DialogueManager>();
         talkRadius = GetComponent<Collider>();
 	}
@@ -36,7 +44,9 @@ public class DialogueHolder : MonoBehaviour {
 
             if (Input.GetMouseButtonUp(0))
             {
-                    
+				if (image)
+					image.enabled = !image.enabled;
+
                 if (!dManager.dialogueActive)
                 {
                     dManager.dialogueLines = dialogueLines;
